@@ -14,42 +14,42 @@ const treatments = [
     title: "Orthopedic Rehabilitation",
     description:
       "Structured physiotherapy support for musculoskeletal pain, injuries and recovery.",
-    image: "/images/treatment.webp",
+    image: `${import.meta.env.BASE_URL}images/treatment.webp`,
   },
   {
     icon: Activity,
     title: "Pain Management",
     description:
       "Personalized care focused on reducing pain and improving everyday movement.",
-    image: "/images/therapy.webp",
+    image: `${import.meta.env.BASE_URL}images/therapy.webp`,
   },
   {
     icon: Move,
     title: "Mobility & Movement",
     description:
       "Improve flexibility, range of motion, balance and functional movement.",
-    image: "/images/clinic.webp",
+    image: `${import.meta.env.BASE_URL}images/clinic.webp`,
   },
   {
     icon: Dumbbell,
     title: "Strength & Conditioning",
     description:
       "Progressive exercises designed to rebuild strength and support long-term recovery.",
-    image: "/images/therapy.webp",
+    image: `${import.meta.env.BASE_URL}images/therapy.webp`,
   },
   {
     icon: HeartPulse,
     title: "Post-Injury Recovery",
     description:
       "Guided rehabilitation to help you return safely to your normal activities.",
-    image: "/images/treatment.webp",
+    image: `${import.meta.env.BASE_URL}images/treatment.webp`,
   },
   {
     icon: Sparkles,
     title: "Personalized Physiotherapy",
     description:
       "A treatment approach adapted to your condition, goals and recovery journey.",
-    image: "/images/doctor.webp",
+    image: `${import.meta.env.BASE_URL}images/doctor.webp`,
   },
 ];
 
@@ -61,7 +61,7 @@ function Treatments() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-        {/* Section heading */}
+        {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -71,6 +71,7 @@ function Treatments() {
         >
           <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-[#b91c1c]/8 px-4 py-2">
             <span className="h-2 w-2 rounded-full bg-[#b91c1c]" />
+
             <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#b91c1c]">
               Our Treatments
             </span>
@@ -88,7 +89,7 @@ function Treatments() {
           </p>
         </motion.div>
 
-        {/* Treatment grid */}
+        {/* Treatment Grid */}
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {treatments.map((treatment, index) => {
             const Icon = treatment.icon;
@@ -133,6 +134,7 @@ function Treatments() {
 
                   <div className="mt-5 flex items-center gap-2 text-xs font-bold text-[#b91c1c]">
                     Learn more
+
                     <span className="transition-transform duration-300 group-hover:translate-x-1">
                       →
                     </span>
