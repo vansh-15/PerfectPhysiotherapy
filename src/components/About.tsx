@@ -31,7 +31,7 @@ function About() {
         >
           <div className="overflow-hidden rounded-[2rem]">
             <img
-              src="/images/clinic.webp"
+              src={`${import.meta.env.BASE_URL}images/clinic.webp`}
               alt="Perfect Physiotherapy Centre"
               className="h-[520px] w-full object-cover"
             />

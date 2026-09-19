@@ -122,7 +122,7 @@ function Hero() {
           {/* Main image */}
           <div className="relative overflow-hidden rounded-[2rem] bg-neutral-200 shadow-2xl shadow-black/10">
             <img
-              src="/images/doctor.webp"
+              src={`${import.meta.env.BASE_URL}images/doctor.webp`}
               alt="Perfect Physiotherapy Centre"
               className="h-[500px] w-full object-cover object-center sm:h-[600px]"
             />

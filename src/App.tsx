@@ -13,7 +13,7 @@ function App() {
       <Treatments />
       <About />
     </div>
-  );
+  )
 }
 
 export default App;
