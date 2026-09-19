@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
+:root {
+  --ppc-yellow: #FFD600;
+  --ppc-red: #E31B23;
+  --ppc-dark-red: #B5121B;
+  --ppc-black: #171717;
+  --ppc-white: #FFFFFF;
+  --ppc-cream: #FFFDF5;
+  --ppc-border: #F0E9D2;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,9 +22,9 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #ffffff;
-  color: #171717;
-  font-family: 'Manrope', sans-serif;
+  background: var(--ppc-white);
+  color: var(--ppc-black);
+  font-family: "Manrope", sans-serif;
 }
 
 button,
@@ -23,6 +33,6 @@ a {
 }
 
 ::selection {
-  background: #f4c542;
-  color: #171717;
+  background: var(--ppc-yellow);
+  color: var(--ppc-black);
 }

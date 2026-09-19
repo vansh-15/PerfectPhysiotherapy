@@ -10,10 +10,10 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-[#faf9f7] pt-32"
+      className="relative overflow-hidden bg-white pt-32"
     >
       {/* Decorative background */}
-      <div className="pointer-events-none absolute -left-32 top-40 h-72 w-72 rounded-full bg-[#f4c542]/15 blur-3xl" />
+      <div className="pointer-events-none absolute -left-32 top-40 h-72 w-72 rounded-full bg-[#FFD600]/20 blur-3xl" />
 
       <div className="pointer-events-none absolute -right-32 top-20 h-96 w-96 rounded-full bg-[#b91c1c]/10 blur-3xl" />
 
@@ -29,7 +29,7 @@ function Hero() {
           {/* Eyebrow */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#b91c1c]/10 bg-white px-4 py-2 shadow-sm">
             <span className="h-2 w-2 rounded-full bg-[#b91c1c]" />
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#b91c1c]">
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#E31B23]">
               Trusted Physiotherapy Care
             </span>
           </div>
@@ -43,7 +43,7 @@ function Hero() {
               Reclaim your
               <span className="relative ml-2 inline-block">
                 life.
-                <span className="absolute -bottom-1 left-0 h-1.5 w-full rounded-full bg-[#f4c542]" />
+                <span className="absolute -bottom-1 left-0 h-1.5 w-full rounded-full bg-[#FFD600]" />
               </span>
             </span>
           </h1>
@@ -174,7 +174,7 @@ function Hero() {
             className="absolute -bottom-6 -left-4 hidden rounded-2xl border border-white/80 bg-white p-4 shadow-xl sm:block lg:-left-8"
           >
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#b91c1c]/10 text-[#b91c1c]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#E31B23]/10 text-[#b91c1c]">
                 <Clock3 size={20} />
               </div>
 
